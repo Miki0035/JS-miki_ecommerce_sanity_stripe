@@ -3,7 +3,7 @@ import imageUrlBuilder from "@sanity/image-url";
 
 type Source = {
   _type: string
-  _key: string,
+  _key?: string,
   asset: {
     _ref: string,
     _type: string
