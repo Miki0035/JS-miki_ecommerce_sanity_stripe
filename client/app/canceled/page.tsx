@@ -18,7 +18,7 @@ const Cancel = () => {
           </a>
         </p>
         <Link href={"/"}>
-          <button type="button" width="300" className="btn">
+          <button type="button" style={{width: 300}} className="btn">
             Continue Shopping
           </button>
         </Link>
