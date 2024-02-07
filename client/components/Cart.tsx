@@ -17,7 +17,7 @@ import getStripe from "@/utils/getStripe";
 import { ProductInfo } from "@/types";
 
 const Cart = () => {
-  const cartRef = useRef();
+  const cartRef = useRef<HTMLDivElement>(null);
   const {
     totalPrice,
     totalQuantity,
@@ -37,6 +37,7 @@ const Cart = () => {
       body: JSON.stringify(cartItems),
     });
     console.log(response);
+    //@ts-ignore
     if (response.statusCode === 500) return;
 
     const data = await response.json();
